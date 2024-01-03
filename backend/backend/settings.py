@@ -19,6 +19,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -30,7 +32,7 @@ INSTALLED_APPS = [
     'api',
     'customer',
     'store',
-    'userauth',
+    'userauths',
     'vendor',
 ]
 
@@ -116,3 +118,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    'site_title': 'kr0pa',
+    'site_header': 'kr0pa',
+    'site_brand': 'kr0pa',
+    'welcome_sign': 'Welcome to kr0pa',
+    'copyright': 'kr0pa',
+}
